@@ -111,7 +111,7 @@ ul li {
 }
 
 .titulo .imagem {
-    background-image: url(/assets/images/logo1.png);
+    background-image: url(assets/images/logo1.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -162,7 +162,7 @@ div p {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url(/assets/images/escritório.jpg);
+    background-image: url(assets/images/escritório.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -172,7 +172,7 @@ div p {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url(/assets/images/images.jfif);
+    background-image: url(assets/images/images.jfif);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -182,7 +182,7 @@ div p {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url(/assets/images/notebook-ferramenta.jpg);
+    background-image: url(assets/images/notebook-ferramenta.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
