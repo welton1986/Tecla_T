@@ -1,0 +1,534 @@
+
+
+*{
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+.banner {
+    width: 100%;
+    height: 700px;
+    background-image:url(assets/images/notebook-ferramenta.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+
+   
+}
+
+.ColorBanner {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 700px;
+    background-color: rgba(69, 180, 125, 0.7);
+}
+
+#header {
+    width: 100%;
+    height: 80px;
+    position: fixed;
+    background-color: rgba(69, 180, 125, 0);
+    display: flex;
+    justify-content: center;
+    
+
+}
+
+#header.scroll {
+    background-color:white;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 1);
+   
+
+}
+
+.logo {
+    height: 80px;
+    width: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.logoImg img {
+    width: 100px;
+    height: 70px;
+    border-radius: 5px 0px 5px 0px;
+    
+}
+
+.menu {
+    width: 80%;
+    display: flex;
+    justify-content:flex-end;
+    align-items: center;
+    
+}
+
+ul  {
+    display: flex;
+}
+
+ul li {
+    margin-right: 30px;
+}
+
+.menu ul,
+.menu li {
+    list-style: none;
+}
+
+.menu li a {
+    color:rgb(2, 33, 70);
+    text-decoration: none;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    border-bottom: 2px solid rgba(255, 0, 0,0);
+}
+
+.menu li a:hover ,
+.menu .active a  {
+    border-bottom: 2px solid #45B47D;
+    color: #45B47D;
+    transition: 0.5s;
+}
+
+.titulo {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 100%;
+    height: 300px;
+    margin-top: 340px;
+   
+}
+
+.titulo .imagem {
+    background-image: url(/assets/images/logo1.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width:100px;
+    height: 100px;
+    margin-right: 200px;
+    
+}
+
+.titulo .titulo1 {
+    margin-right: 200px;
+    color: #FFF;
+}
+
+main .banner2 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 260px;
+   
+    
+}
+
+.banner2 div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    width: 300px;
+    height: 220px;
+    border-radius: 10px;
+   
+}
+
+div h3 {
+    color: rgb(69, 180, 125);
+}
+
+div p {
+    color: #FFF;
+    font-size: 18px;
+}
+
+
+
+.imagem1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(/assets/images/escritório.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.imagem2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(/assets/images/images.jfif);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.imagem3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(/assets/images/notebook-ferramenta.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.imagemColor {
+    background-color: rgba(2, 33, 70,0.8);
+}
+
+#sobre {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 700px;
+} 
+
+.sobre1 {
+    display: flex;
+    height: 600px;
+    
+}
+
+.sobre1 .imagem {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.imagem img {
+    width: 500px;
+    height: 400px;
+}
+
+.sobre1 .texto {
+    display: flex;
+    flex-direction:column;
+    flex: 1;
+    height: 100%;
+    
+}
+
+.texto .texto1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 1;
+    padding: 20px;
+    
+}
+
+.texto1 h2 {
+    font-size: 40px;
+    margin: 0px;
+    margin-bottom: 30px;
+    color: rgb(2, 33, 70);
+}
+
+.texto p {
+    font-size: 18px;
+    color: rgb(2, 33, 70);
+}
+
+.texto .texto2 {
+    flex: 1;
+    display: flex;
+    
+}
+
+.texto2 .esquerda {
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    flex: 1;
+    height: 100%;
+    
+    
+}
+
+.esquerda img {
+    width: 50px;
+    height: 50px;
+}
+
+.texto2 .direita {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    height: 100%;
+    
+}
+
+.direita img {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 30px;
+}
+
+.sobre2 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex: 1;
+    margin-bottom: 40px;
+}
+
+.sobre2 p {
+    font-size:24px;
+    color: rgb(2, 33, 70) ;
+}
+
+.sobre2 button {
+    width: 130px;
+    height: 40px;
+    border-radius: 16px;
+    color: rgb(2, 33, 70) ;
+    border: 1px solid rgb(2, 33, 70) ;
+    cursor: pointer;
+}
+
+.sobre2 button:hover {
+    width: 140px;
+    background-color: rgb(2, 33, 70) ;
+    color: #FFF;
+    transition: 0.5s;
+}
+
+#produtos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 460px;
+    background-color: rgb(69, 180, 125) ;
+}
+
+#produtos .produtos1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 100px;
+    margin-top: 30px;
+    font-size: 30px;
+    color: #FFF;
+}
+
+#produtos .box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    flex: 1;
+}
+
+.box div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 220px;
+    height: 230px;
+    border-radius: 20px;
+    margin: 10px;
+    padding: 10px;
+    background-color: rgb(2, 33, 70);
+}
+
+.box div img {
+    width: 40px;
+    height: 40px;
+}
+
+.box div:hover {
+    width: 230px;
+    height:240px ;
+    transition: 0.5s;
+}
+
+.box div button {
+    width: 130px;
+    height: 40px;
+    border-radius: 16px;
+    color: rgb(69, 180, 125) ;
+    background-color: rgb(2, 33, 70) ;
+    border: 1px solid rgb(69, 180, 125) ;
+    cursor: pointer;
+}
+
+.box div button:hover {
+    background-color: rgb(69, 180, 125) ;
+    color: #FFF ;
+    width: 140px;
+    border: none;
+    transition: 0.5s;
+}
+
+
+#diferenciais {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 460px;
+    
+}
+
+#diferenciais .diferenciais1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 700px;
+    height: 160px;
+    margin-top: 30px;
+    font-size: 30px;
+    color: rgb(2, 33, 70);
+}
+
+#diferenciais .diferenciais1 p {
+    color: rgb(2, 33, 70) ;
+    margin:0;
+
+}
+
+#diferenciais .box1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    flex: 1;
+}
+
+#diferenciais .box1 div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 220px;
+    height: 130px;
+    border: 2px solid rgb(69, 180, 125) ;
+    border-radius: 20px;
+    margin: 10px;
+    padding: 10px;
+    
+}
+
+#diferenciais .box1 div:hover {
+    width: 230px;
+    height: 140px;
+    transition: 0.5s;
+}
+
+#diferenciais .box1 div p {
+    color: rgb(2, 33, 70) ;
+}
+
+#unico {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 460px;
+    background-image: url(assets/images/escritório.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.ColorUnico {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 460px;
+    background-color: rgba(2, 33, 70, 0.7);
+}
+
+#unico .titulo1 {
+    text-align: center;
+    width: 100%;
+    height: 160px;
+    font-size: 30px;
+    color: #FFF;
+   
+}
+
+#unico .titulo1 span {
+    color: rgb(69, 180, 125);
+}
+
+#unico .texto3 {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    flex: 1;
+    
+}
+
+.texto3 div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 40%;
+    
+}
+
+.texto3 h3 {
+    color: #FFF;
+}
+
+.texto3 p {
+    color: #FFF;
+}
+
+#unico .botao {
+    height: 100px;
+}
+
+#unico button {
+    width: 140px;
+    height: 40px;
+    border-radius: 16px;
+    margin-bottom: 40px;
+    border: 2px solid #FFF;
+    color: #FFF;
+    background-color: rgba(255, 255, 255, 0);
+    cursor: pointer;
+
+}
+
+#unico button:hover {
+    background-color: rgb(69, 180, 125) ;
+    width: 150px;
+    height: 44px;
+    border: none;
+    transition: 0.5s;
+}
+
+
