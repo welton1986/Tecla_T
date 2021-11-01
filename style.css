@@ -4,52 +4,60 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior:smooth ;
+}
+
 body {
     margin: 0px;
     padding: 0px;
 }
 
-.banner {
+#banner {
     width: 100%;
-    height: 700px;
-    background-image:url(assets/images/notebook-ferramenta.jpg);
+    height: 43.75rem;
+    background-image:url(assets/images/office.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 
-
-   
 }
 
 .ColorBanner {
     display: flex;
     flex-direction: column;
     width: 100%;
-    height: 700px;
-    background-color: rgba(69, 180, 125, 0.7);
+    height: 43.75rem;
+    background-color: rgba(69, 180, 125, 0.7) ;
 }
 
 #header {
     width: 100%;
-    height: 80px;
+    height: 4.125rem;
     position: fixed;
     background-color: rgba(69, 180, 125, 0);
     display: flex;
     justify-content: center;
-    
 
 }
+
 
 #header.scroll {
     background-color:white;
     box-shadow: 0px 0px 8px rgba(0, 0, 0, 1);
-   
 
 }
 
+#header.scroll .menu li a:hover ,
+#header.scroll .menu .active a  {
+    border-bottom: 2px solid rgb(69, 180, 125);
+    color: rgb(69, 180, 125);
+    transition: 0.5s;
+}
+
 .logo {
-    height: 80px;
-    width: 120px;
+    height: 4.125rem;
+    width: 7.5rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -57,8 +65,8 @@ body {
 
 
 .logoImg img {
-    width: 100px;
-    height: 70px;
+    width: 8.5rem;
+    height: 2.5rem;
     border-radius: 5px 0px 5px 0px;
     
 }
@@ -87,7 +95,7 @@ ul li {
 .menu li a {
     color:rgb(2, 33, 70);
     text-decoration: none;
-    height: 70px;
+    height: 3.625rem;
     display: flex;
     align-items: center;
     border-bottom: 2px solid rgba(255, 0, 0,0);
@@ -95,8 +103,8 @@ ul li {
 
 .menu li a:hover ,
 .menu .active a  {
-    border-bottom: 2px solid #45B47D;
-    color: #45B47D;
+    border-bottom: 2px solid rgb(0, 128, 0);
+    color: rgb(0, 128, 0);
     transition: 0.5s;
 }
 
@@ -105,24 +113,20 @@ ul li {
     flex-direction: column;
     align-items: flex-end;
     width: 100%;
-    height: 300px;
-    margin-top: 340px;
+    height: 18.75rem;
+    margin-top: 21.25rem;
    
 }
 
-.titulo .imagem {
-    background-image: url(assets/images/logo1.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    width:100px;
-    height: 100px;
-    margin-right: 200px;
+.titulo img {
+    width:13.75rem;
+    height: 4.375rem;
+    margin-right: 12.5rem;
     
 }
 
 .titulo .titulo1 {
-    margin-right: 200px;
+    margin-right: 12.5rem;
     color: #FFF;
 }
 
@@ -131,7 +135,7 @@ main .banner2 {
     justify-content: space-around;
     align-items: center;
     width: 100%;
-    height: 260px;
+    height: 16.25rem;
    
     
 }
@@ -141,9 +145,9 @@ main .banner2 {
     flex-direction: column;
     align-items: center;
     padding: 20px;
-    width: 300px;
-    height: 220px;
-    border-radius: 10px;
+    width: 18.75rem;
+    height: 13.75rem;
+    border-radius: 0.625rem;
    
 }
 
@@ -201,7 +205,7 @@ div p {
 
 .sobre1 {
     display: flex;
-    height: 600px;
+    height: 43.75rem;
     
 }
 
@@ -214,8 +218,8 @@ div p {
 }
 
 .imagem img {
-    width: 500px;
-    height: 400px;
+    width: 31.25rem;
+    height: 25rem;
 }
 
 .sobre1 .texto {
@@ -231,19 +235,19 @@ div p {
     flex-direction: column;
     justify-content: center;
     flex: 1;
-    padding: 20px;
+    padding: 1.25rem;
     
 }
 
 .texto1 h2 {
-    font-size: 40px;
+    font-size: 2.5rem;
     margin: 0px;
-    margin-bottom: 30px;
+    margin-bottom: 1.875rem;
     color: rgb(2, 33, 70);
 }
 
 .texto p {
-    font-size: 18px;
+    font-size: 1.125rem;
     color: rgb(2, 33, 70);
 }
 
@@ -265,8 +269,8 @@ div p {
 }
 
 .esquerda img {
-    width: 50px;
-    height: 50px;
+    width: 3.125rem;
+    height: 3.125rem;
 }
 
 .texto2 .direita {
@@ -280,9 +284,9 @@ div p {
 }
 
 .direita img {
-    width: 40px;
-    height: 40px;
-    margin-bottom: 30px;
+    width: 2.5rem;
+    height: 2.5rem;
+    margin-bottom: 1.875rem;
 }
 
 .sobre2 {
@@ -290,25 +294,25 @@ div p {
     justify-content: space-around;
     align-items: center;
     flex: 1;
-    margin-bottom: 40px;
+    margin-bottom: 2.5rem;
 }
 
 .sobre2 p {
-    font-size:24px;
+    font-size:1.5rem;
     color: rgb(2, 33, 70) ;
 }
 
 .sobre2 button {
-    width: 130px;
-    height: 40px;
-    border-radius: 16px;
+    width: 8.125rem;
+    height: 2.5rem;
+    border-radius: 1rem;
     color: rgb(2, 33, 70) ;
     border: 1px solid rgb(2, 33, 70) ;
     cursor: pointer;
 }
 
 .sobre2 button:hover {
-    width: 140px;
+    width: 8.75rem;
     background-color: rgb(2, 33, 70) ;
     color: #FFF;
     transition: 0.5s;
@@ -319,7 +323,7 @@ div p {
     flex-direction: column;
     align-items: center;
     width: 100%;
-    height: 460px;
+    height: 28.75rem;
     background-color: rgb(69, 180, 125) ;
 }
 
@@ -327,10 +331,10 @@ div p {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 300px;
-    height: 100px;
-    margin-top: 30px;
-    font-size: 30px;
+    width:18.75rem ;
+    height: 6.25rem;
+    margin-top: 1.875rem;
+    font-size: 1.875rem;
     color: #FFF;
 }
 
@@ -348,28 +352,28 @@ div p {
     justify-content: center;
     align-items: center;
     text-align: center;
-    width: 220px;
-    height: 230px;
+    width: 13.75rem;
+    height: 14.1375rem;
     border-radius: 20px;
-    margin: 10px;
-    padding: 10px;
+    margin: 0.625rem;
+    padding: 0.625rem;
     background-color: rgb(2, 33, 70);
 }
 
 .box div img {
-    width: 40px;
-    height: 40px;
+    width: 2.5rem;
+    height: 2.5rem;
 }
 
 .box div:hover {
-    width: 230px;
-    height:240px ;
+    width: 14.1375rem;
+    height:15rem ;
     transition: 0.5s;
 }
 
 .box div button {
-    width: 130px;
-    height: 40px;
+    width: 8.125rem;
+    height: 2.5rem;
     border-radius: 16px;
     color: rgb(69, 180, 125) ;
     background-color: rgb(2, 33, 70) ;
@@ -380,7 +384,7 @@ div p {
 .box div button:hover {
     background-color: rgb(69, 180, 125) ;
     color: #FFF ;
-    width: 140px;
+    width: 8.75rem;
     border: none;
     transition: 0.5s;
 }
@@ -391,7 +395,7 @@ div p {
     flex-direction: column;
     align-items: center;
     width: 100%;
-    height: 460px;
+    height: 28.75rem;
     
 }
 
@@ -400,10 +404,10 @@ div p {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 700px;
-    height: 160px;
-    margin-top: 30px;
-    font-size: 30px;
+    width: 43.75rem;
+    height: 10rem;
+    margin-top: 1.875rem;
+    font-size: 1.875rem;
     color: rgb(2, 33, 70);
 }
 
@@ -427,18 +431,18 @@ div p {
     justify-content: center;
     align-items: center;
     text-align: center;
-    width: 220px;
-    height: 130px;
+    width: 13.75rem;
+    height: 8.125rem;
     border: 2px solid rgb(69, 180, 125) ;
     border-radius: 20px;
-    margin: 10px;
-    padding: 10px;
+    margin: 0.625rem;
+    padding: 0.625rem;
     
 }
 
 #diferenciais .box1 div:hover {
-    width: 230px;
-    height: 140px;
+    width: 14.375rem;
+    height: 8.75rem;
     transition: 0.5s;
 }
 
@@ -452,7 +456,7 @@ div p {
     align-items: center;
     justify-content: center;
     width: 100%;
-    height: 460px;
+    height: 28.75rem;
     background-image: url(assets/images/escritório.jpg);
     background-position: center;
     background-repeat: no-repeat;
@@ -465,15 +469,15 @@ div p {
     align-items: center;
     justify-content: center;
     width: 100%;
-    height: 460px;
+    height: 28.75rem;
     background-color: rgba(2, 33, 70, 0.7);
 }
 
 #unico .titulo1 {
     text-align: center;
     width: 100%;
-    height: 160px;
-    font-size: 30px;
+    height: 10rem;
+    font-size: 1.875rem;
     color: #FFF;
    
 }
@@ -512,10 +516,10 @@ div p {
 }
 
 #unico button {
-    width: 140px;
-    height: 40px;
+    width: 8.75rem;
+    height: 2.5rem;
     border-radius: 16px;
-    margin-bottom: 40px;
+    margin-bottom: 2.5rem;
     border: 2px solid #FFF;
     color: #FFF;
     background-color: rgba(255, 255, 255, 0);
@@ -525,10 +529,227 @@ div p {
 
 #unico button:hover {
     background-color: rgb(69, 180, 125) ;
-    width: 150px;
-    height: 44px;
+    width: 9.375rem;
+    height: 2.75rem;
     border: none;
     transition: 0.5s;
 }
+
+#depoimentos {
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 37.5rem;
+    
+}
+
+.depoimentoTitulo {
+    height: 100px;
+    margin-bottom: 1.25rem;
+   
+}
+
+.depoimentoTitulo h2 {
+    font-size: 2.8125rem;
+    color: rgb(2, 33, 70) ;
+}
+
+#depoimentos .slider {
+    display: flex;
+    align-items: center;
+    width: 37.5rem;
+    height: 25rem;
+    border-radius: 20px;
+    overflow-x: hidden;
+  
+}
+
+.slider .slider--width {
+    height: 25rem;
+    display: flex;
+    transition: all ease 1.5s;
+    
+}
+
+.slider--width .slider--video {
+    display: flex;
+    flex-direction: column;
+    width: 37.5rem;
+    height: inherit;
+   
+}
+
+.slider--video .cor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 3.125rem;
+    color: rgb(69, 180, 125);
+    font-size: 1.25rem;
+    background-color: rgb(221, 245, 233);
+    border-bottom: 8px solid rgb(197, 202, 202) ;
+}
+
+.slider--controls {
+    position: absolute;
+    z-index: 99;
+    width: 50rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+#depoimentos .slider--controls {
+    margin-top: 8.75rem;
+    cursor: pointer;
+
+}
+
+
+#clientes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 18.75rem;
+    padding: 0.625rem;
+    background-color:rgb(221, 221, 221);
+    border-bottom: solid 5px rgb(69, 180, 125);
+}
+
+.clienteTitulo h2 {
+    font-size: 2.8125rem;
+    color: rgb(2, 33, 70)  ;
+}
+
+#clientes .clienteBox {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 50%;
+   
+}
+
+.clienteBox div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 6.25rem;
+    height: 6.25rem;
+}
+
+.clienteBox div img {
+    width: 5.625rem;
+    height: 4.375rem;
+}
+
+#contatos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 28.75rem ;
+    background-color: rgb(2, 33, 70) ;
+}
+
+#contatos p {
+    margin: 0.625rem;
+}
+
+#contatos div {
+    width: 16.25rem ;
+    height: 20rem;
+    margin-right: 1.25rem;
+}
+
+
+.contato1 img {
+    width: 10rem;
+    height: 3rem;
+}
+
+.contato1 button {
+    width: 8.75rem;
+    height: 2.5rem;
+    border-radius: 5px;
+    color: rgb(69, 180, 125) ;
+    border: 1px solid rgb(69, 180, 125);
+    background-color: rgba(69, 180, 125, 0) ;
+    cursor: pointer;
+    margin-top: 1.25rem;
+    
+}
+
+.contato1 button:hover {
+    background-color: rgb(69, 180, 125) ;
+    color: #FFF;
+    width: 9.375rem;
+    height: 2.75rem;
+    border: none;
+    transition: 0.5s;
+    
+}
+
+#contatos .contato2 {
+    display: flex;
+    flex-direction: column;
+}
+
+#contatos .contato2 h3 {
+    color: rgb(69, 180, 125)  ;
+}
+
+#contatos .contato2 span {
+    color: rgb(69, 180, 125) ;
+}
+
+.contato2 p:hover {
+    font-size: 1.25rem;
+    cursor: pointer;
+    color: rgb(69, 180, 125) ;
+    transition: 0.5s;
+
+}
+
+#contatos .contato3 {
+    display: flex;
+    flex-direction: column;
+}
+
+#contatos .contato3 p:hover {
+    cursor: pointer;
+    color: rgb(69, 180, 125) ;
+}
+
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 4.7rem ;
+    background-color: rgb(0, 16, 36);
+}
+
+footer p {
+    margin:0px;
+    color: #FFF;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
